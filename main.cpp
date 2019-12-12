@@ -1,25 +1,22 @@
-// CPP program to illustrate
-// Implementation of push() function
 #include <iostream>
-#include <queue>
+#include <stack>
 using namespace std;
 
 int main()
 {
-    // Empty Queue
-    queue<int> myqueue;
-    myqueue.push(0);
-    myqueue.push(1);
-    myqueue.push(2);
-    myqueue.push(3);
+    // Empty stack
+    stack<int> mystack;
+    mystack.push(0);
+    mystack.push(1);
+    mystack.push(2);
+    mystack.push(3);
 
-    // Printing content of queue
-    while (!myqueue.empty()) {
-        cout << ' ' << myqueue.front()<<endl;
-
-        cout<<"FRENTE"<<myqueue.front()<< endl;
-        cout<<<<myqueue.back()<< endl;
-        myqueue.pop();
+    // Printing content of stack
+    while (!mystack.empty()) {
+        cout << ' ' << mystack.top()<<endl;
+        cout<<mystack.top()<< endl;
+        cout<<mystack.size()<< endl;
+        mystack.pop();
     }
-    return 0;
 }
+
